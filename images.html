@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Images Side by Side</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+		}
+
+		.container img {
+            width: 550px;
+			height: 700px;
+			margin: 15px; /* add margin to create gap */
+		}
+        .content {
+			text-align: center;
+			margin: 30px auto;
+			max-width: 800px;
+        }
+	</style>
+</head>
+<div class="content">
+<h1>Image Excercise!</h1>
+</div>
+<body>
+    
+	<div class="container">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="man and mountain">
+		<img src="https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="man on rock">
+	</div>
+</body>
+</html>
