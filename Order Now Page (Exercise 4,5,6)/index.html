@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="header"><!--Header-->
+    <header>
+      <h1 id="header">Online Shop</h1>
+    </header>
+
+    <nav><!--Nav-->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+   
+
+<div class="container"> <!--Product Article-->
+      <article>
+        <h2>Product Title</h2>
+        <a href="Ferrari.jpg"><img src="Ferrari.jpg" alt="Ferrari Image"></a>
+        <h3>SF90 Stradale: The New Series-Production Supercar</h3>
+        <p>The car’s name encapsulates the true significance of all that has been achieved in terms of performance. The reference to the 90th anniversary of the foundation of Scuderia Ferrari underscores the strong link that has always existed between Ferrari’s track and road cars. A brilliant encapsulation of the most advanced technologies developed in Maranello, the SF90 Stradale is also the perfect demonstration of how Ferrari immediately transitions the knowledge and skills it acquires in competition to its production cars. </p>
+      </article>
+
+
+      <aside id="container"><!--Related Products-->
+        <ul style="list-style-type: none;">
+          <h2 style="padding-bottom: 20px; padding-top: 20px;">Related Products</h2>
+          <li><a href="Porche.jpg"><img src="Porche.jpg" alt="Porche Image" style="width: 500px; height: 350px;"></a></li>
+          <li><a href="Lamborghini.jpg"><img src="lamborghini.jpg" alt="Lamborghini Image" style="width: 500px; height: 350px;"></a></li>
+        </ul>
+      </aside>
+    </div>
+
+      <div class="form"><!--Shipping Form-->
+        <form>
+          <h2 style="padding-bottom: 30px; padding-top: 20px;">Shipping Information</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+          <label for="zip">Zip Code:</label>
+          <input type="text" id="zip" name="zip" required>
+          <button id="order-now" type="submit">Order Now</button>
+        </form>
+      </div>
+
+      <footer><!--Footer-->
+        <p>&copy; 2023 by Your Name. All rights reversed.</p>
+      </footer>
+
+      <script>   
+        document.getElementById('header').innerHTML = 'Online Shop';
+        document.getElementById('container').style.backgroundColor = 'green';
+
+        // Add event listener to order button
+        document.getElementById('order-now').addEventListener('click', function() {
+            alert('Your order will be shipped soon!');
+        });
+
+        // Add event listener to shipping form
+        document.getElementById('shipping-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Check if all required fields have been filled
+            if (document.getElementById('name').value && document.getElementById('address').value && document.getElementById('city').value && document.getElementById('state').value && document.getElementById('zip').value) {
+                document.getElementById('order-now').disabled = false; // Enable the order button
+            } else {
+                alert('Please fill out all required fields.'); // Display an alert if any required field is empty
+            }
+        });
+    </script>
+
+  </body>
+</html>
