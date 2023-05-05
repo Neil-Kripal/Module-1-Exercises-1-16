@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "sentiment": "^5.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}

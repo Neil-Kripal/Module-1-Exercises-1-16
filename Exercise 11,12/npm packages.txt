@@ -1,0 +1,7 @@
+Express.js - A fast, unopinionated, minimalist web framework for Node.js
+React - A JavaScript library for building user interfaces
+Lodash - A utility library delivering consistency, modularity, and performance to JavaScript applications
+
+npm install express
+npm install react
+npm install lodash
